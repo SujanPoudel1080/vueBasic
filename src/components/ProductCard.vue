@@ -38,6 +38,7 @@ const product = reactive({
   outline-color: goldenrod;
   border-radius: 6px;
   border-width: 5px;
+  margin: 20px;
   
 } 
 .pc:hover {
