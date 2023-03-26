@@ -7,6 +7,7 @@ import Clientele from './components/Clientele.vue';
 import Typewriter from './components/Typewriter.vue';
 import AppButton from './components/AppButton.vue';
 import Services from './components/Services.vue';
+import Contact from './components/Contact.vue';
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Services from './components/Services.vue';
   <Footer /> -->
   <Typewriter />
   <Services/>
+  <Contact />
   <AppButton/>
   <Clientele/>
 </template>
