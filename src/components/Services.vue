@@ -22,7 +22,8 @@ provide('services' , services)
 
 <style scoped>
 .services-container{
-    background-color: #c7ecfe;
+    background: rgb(199,236,254);
+background: radial-gradient(circle, rgba(199,236,254,1) 0%, rgba(0,212,255,1) 63%, rgba(44,118,149,1) 100%);
     color: #2c7695;
     padding-left: 5vw;
 }

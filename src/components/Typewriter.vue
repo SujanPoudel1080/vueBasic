@@ -14,14 +14,16 @@
 <button class="info">GET STARTED
     <font-awesome-icon  class ="indic" icon="arrow-right" />
 </button>
+
         </div>
-        
+        <Transition name="bounce">Hello!</Transition>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
 import Header from './Header.vue'
+import { Transition } from 'vue';
 </script>
 
 <style>
@@ -35,11 +37,11 @@ body {
   background-image: url("../assets/images/bg2.jpg");
   background-size: cover;
   margin: auto;
-  font-size: 32px;
+  font-size: 48px;
   color: #2c7695;
   font-family: monospace;
   font-weight: 700;
-  min-height: 90vh;
+  min-height: 100vh;
   position: relative;
 }
 .divider{
@@ -56,7 +58,7 @@ body {
     padding-left:5vw;
     max-width: 50vw;
     justify-content: left;
-    font-size: 24px;
+    font-size: 32px;
 }
 .heading{
     padding-top: 60px;
@@ -143,6 +145,21 @@ body {
   border-right: 0;
 }
 
+.bounce-enter-active {
+  animation: bounce-in 0.5s;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 @media (prefers-reduced-motion) {
   .typewriter::after {
@@ -160,5 +177,7 @@ body {
     content: "Shaping";
     animation: sequencePopup 15s linear infinite;
   }
+
+  
 }
 </style>

@@ -16,7 +16,7 @@ import Contact from './components/Contact.vue';
   <Footer /> -->
   <Typewriter />
   <Services/>
-  <Contact />
+  <!-- <Contact /> -->
   <AppButton/>
   <Clientele/>
 </template>
